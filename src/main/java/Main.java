@@ -63,7 +63,7 @@ public class Main {
     }
 
     private static List<String> howManyPosts(List<User> listOfUsers) {
-        List<String> whoWriteHowMany = new ArrayList<>();
+        List<String> whoWriteHowMany = new ArrayList<String>();
         for (int i = 0; i < listOfUsers.size(); i++) {
             whoWriteHowMany.add(listOfUsers.get(i).getUsername() + " napisał(a) " + listOfUsers.get(i).getListOfPosts().size() + " postów");
         }
