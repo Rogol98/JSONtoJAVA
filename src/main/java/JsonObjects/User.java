@@ -12,7 +12,7 @@ public class User {
     private String phone;
     private String website;
     private Company company;
-    private List<Post> listOfPosts = new ArrayList<Post>();
+    private List<Post> listOfPosts = new ArrayList<>();
 
     public int getId() {
         return id;
