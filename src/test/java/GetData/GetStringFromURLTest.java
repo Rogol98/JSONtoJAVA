@@ -10,7 +10,7 @@ public class GetStringFromURLTest {
 
     @Test
     public void readAllTest() throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(new File("test_text.txt")));
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src\\test\\java\\resources\\test_text.txt")));
         String result = readAll(reader);
         String expected = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard\r\n" +
                 " dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\r\n" +

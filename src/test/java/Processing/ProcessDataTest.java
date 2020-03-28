@@ -27,7 +27,7 @@ public class ProcessDataTest {
     @Before
     public void createUsersTestList() throws IOException {
 
-        BufferedReader reader = new BufferedReader(new FileReader("testing_list_of_users.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("src\\test\\java\\resources\\testing_list_of_users.txt"));
         String jsonUsersArrayAsString = readAll(reader);
 
         List<User> listOfUsers = new ArrayList<>();
@@ -54,7 +54,7 @@ public class ProcessDataTest {
 
     @Before
     public void createPostsTestList() throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("testing_list_of_posts.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("src\\test\\java\\resources\\testing_list_of_posts.txt"));
         String jsonPostsArrayAsString = readAll(reader);
 
         JSONObject mainPostsObject = new JSONObject(jsonPostsArrayAsString);
